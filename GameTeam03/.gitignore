@@ -13,8 +13,29 @@
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 #Ignorando TextMeshPro
-Assets/TextMesh Pro/ 
 
+Assets/TextMesh Pro/ 
+Assets/3D Cartoon Village/
+Assets/Asteroids_Pack/
+Assets/EmaceArt/
+Assets/EmaceArt - raft on the desert/
+Assets/Fantasy Skybox FREE/
+Assets/Free_Galaxy_Background/
+Assets/GUI-RPG&Fantasy Mobile GUI/
+Assets/Low Poly Free Vegetation Kit/
+Assets/Low_Poly_Mini_Village/
+Assets/LowPolyBarriersPackFree/
+Assets/Planets_of_the_Solar_System_3D/
+Assets/Pure Poly/
+Assets/Real_Stars_Skybox/
+Assets/SimpleLowPolyNature/
+Assets/texturas/
+Assets/
+Assets/
+Assets/
+Assets/
+Assets/
+Assets/
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 
