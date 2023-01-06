@@ -7,19 +7,19 @@ public static class SaveManger
 {
     public static void SavePlayerData(Player player)
     {
-        PlayerData playerData = new PlayerData(player);
+        GameData gameData = new GameData(player);
 
         // Ruta de guardado
         string dataPath = Application.persistentDataPath + "/player.save";
         FileStream fileStream = new FileStream(dataPath, FileMode.Create);
 
         BinaryFormatter binaryFormatter = new BinaryFormatter();
-        binaryFormatter.Serialize(fileStream, playerData);
+        binaryFormatter.Serialize(fileStream, gameData);
         fileStream.Close();
 
     }
 
-    public static PlayerData LoadPlayerData()
+    public static GameData LoadPlayerData()
     {
         string dataPath = Application.persistentDataPath + "/player.save";
 
@@ -27,9 +27,10 @@ public static class SaveManger
         {
             FileStream fileStream = new FileStream(dataPath, FileMode.Open);
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            PlayerData playerData = (PlayerData)binaryFormatter.Deserialize(fileStream);
+            
+                GameData gameData = (GameData)binaryFormatter.Deserialize(fileStream);
             fileStream.Close();
-            return playerData;
+            return gameData;
         }
         else
         {
