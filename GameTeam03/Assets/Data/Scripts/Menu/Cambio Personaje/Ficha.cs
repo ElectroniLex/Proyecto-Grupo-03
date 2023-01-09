@@ -14,6 +14,6 @@ public class Ficha
 
     public Sprite imagen_Referencia;
 
-    public GameObject img_refeobject;
+    public GameObject Camara_Prefab;
     
 }

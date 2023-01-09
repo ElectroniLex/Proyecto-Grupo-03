@@ -6,6 +6,8 @@ using System;
 public class Spawner : MonoBehaviour
 {
     public ListaPersonajes listas_Personajes;
+    
+   
 
 
     private int contadorDePersonajes;
@@ -27,10 +29,13 @@ public class Spawner : MonoBehaviour
     {
         Ficha personaje = listas_Personajes.obtenerPersonaje(contadorDePersonajes);
         Instantiate(personaje.objeto_jugador);
+        //Instantiate(personaje.Camara_Prefab);
     }
 
+    
     public void Cargar()
     {
         contadorDePersonajes = PlayerPrefs.GetInt("contadorDePersonajes");
     }
+
 }

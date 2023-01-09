@@ -17,9 +17,10 @@ MonoBehaviour:
     nombre_Personaje: Ralph
     descripcion_Personaje: Personaje principal
     imagen_Referencia: {fileID: 21300000, guid: 391f97da05cf45240a8ecdec752cd9be, type: 3}
-    img_refeobject: {fileID: 0}
-  - objeto_jugador: {fileID: 3763840282169618217, guid: 7a0e8036a46e4b144bdafa5e8d8410f4, type: 3}
+    Camara_Prefab: {fileID: 158447447521984436, guid: 21e1632d29390b24fb48ae6dc3048ff8, type: 3}
+  - objeto_jugador: {fileID: 3630949971876149372, guid: 6d11179ae5cf9c6428f34cc810f58caa, type: 3}
     nombre_Personaje: Yazmin
-    descripcion_Personaje: Personaje 2 mujer
+    descripcion_Personaje: Personaje Mujer
     imagen_Referencia: {fileID: 21300000, guid: 39667442e7d98e44e8d427024b12deee, type: 3}
-    img_refeobject: {fileID: 0}
+    Camara_Prefab: {fileID: 158447447521984436, guid: e43916289deeaf94081c015fc5b044df, type: 3}
+  camara: []

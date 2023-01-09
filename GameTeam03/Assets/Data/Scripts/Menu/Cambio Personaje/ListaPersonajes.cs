@@ -15,8 +15,14 @@ public class ListaPersonajes : ScriptableObject
             return personaje.Length;
         }
     }
-    public  Ficha obtenerPersonaje(int index)
+    public Ficha obtenerPersonaje(int index)
     {
         return personaje[index];
+        
     }
+
+
+
 }
+    
+    
