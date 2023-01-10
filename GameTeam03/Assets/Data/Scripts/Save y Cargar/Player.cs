@@ -6,15 +6,12 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     public int vida;
-    public int score;
+    public int experiencia;
 
     [SerializeField] private TMP_Text vidaText;
-    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text ExperienciaText;
 
-    private float hInput;
-    private float vInput;
-    private float speed = 5f;
-
+  
     private void Start()
     {
         
