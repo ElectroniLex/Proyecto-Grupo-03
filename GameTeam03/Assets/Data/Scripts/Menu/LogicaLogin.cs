@@ -13,7 +13,7 @@ public class LogicaLogin : MonoBehaviour
     public void Login()
     {
 
-        if (m_email.text == "Wifredo" &&  m_password.text == "Hola" )
+        if (m_email.text == "Wilfredo" &&  m_password.text == "Hola" )
         {
             SceneManager.LoadScene("Menu");
             return;
