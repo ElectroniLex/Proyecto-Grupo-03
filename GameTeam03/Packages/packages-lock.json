@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.garettbass.unityextensions.arraydrawer": {
+      "version": "https://github.com/garettbass/UnityExtensions.ArrayDrawer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "893d3cdfebb9a38aa3f040be9ba0e0364909a483"
+    },
     "com.unity.cinemachine": {
       "version": "2.9.4",
       "depth": 0,

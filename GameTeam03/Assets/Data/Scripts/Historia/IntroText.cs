@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class IntroText : MonoBehaviour
@@ -13,7 +14,7 @@ public class IntroText : MonoBehaviour
     public string[] SdialogoPelea;
     public string[] SdialogoFinal;
 
-    public Text txtDialogo;
+    public TMP_Text txtDialogo;
     public bool isDialogActive;
 
     Coroutine auxCorutine;
@@ -24,11 +25,13 @@ public class IntroText : MonoBehaviour
         {
             CerrarDialogo();
             StartCoroutine(esperaSolapacionDialogo(valor));
+            
         }
         else
         {
             isDialogActive = false;
             auxCorutine = StartCoroutine(mostrarDialogo(valor));
+            
         }
 
 
@@ -63,7 +66,8 @@ public class IntroText : MonoBehaviour
                 }
                 yield return new WaitForSeconds(0.4f);
             }
-            else yield break; 
+            else yield break;
+
         }
         yield return new WaitForSeconds(0.4f);
         Debug.Log("Cierramis Msorar");
@@ -92,13 +96,14 @@ public class IntroText : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             AbrirCajaDialogo(0);
         }
-        else if (Input.GetKeyDown(KeyCode.B))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            AbrirCajaDialogo(1);
+            SceneManager.LoadScene("mundo");
         }
+       
     }
 }
