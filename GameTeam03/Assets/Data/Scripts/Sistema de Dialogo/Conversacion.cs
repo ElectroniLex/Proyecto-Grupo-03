@@ -23,7 +23,7 @@ public class Conversacion : ScriptableObject
     public bool reUsar;
 
     [ReorderableList]
-    public Linea[] dialogo;
+    public Linea[] dialogos;
 
     public Pregunta pregunta;
 }
