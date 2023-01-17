@@ -55,7 +55,7 @@ public class DialogoUI : MonoBehaviour
         }
     }
 
-    private void ActualizarTextos (int comportamiento)
+    public void ActualizarTextos (int comportamiento)
     {
         convContainer.SetActive(true);
         pregContainer.SetActive(false);
@@ -153,7 +153,7 @@ public class DialogoUI : MonoBehaviour
                     localIn = 0;
                     DialogoManager.speakerActual.dialLocalIn = 0;
                     conversacion.finalizado = true;
-                    /*
+                    
                     if(conversacion.pregunta != null)
                     {
                         convContainer.SetActive(false);
@@ -163,7 +163,7 @@ public class DialogoUI : MonoBehaviour
                         return;
                     }
 
-                    */
+                    
                     DialogoManager.instance.MostrarUI(false);
                     return;
                 }

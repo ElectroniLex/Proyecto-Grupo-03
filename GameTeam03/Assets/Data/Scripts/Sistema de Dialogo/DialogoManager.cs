@@ -36,7 +36,7 @@ public class DialogoManager : MonoBehaviour
     {
         //walkS = player.GetComponent<>().m_walkSpeed;
         //RunS = player.GetComponent<>().m_RunSpeed;
-        MostrarIU(false);
+        MostrarUI(false);
         player.GetComponent<DialogueSpeaker>().Conversar();
     }
 
@@ -60,7 +60,7 @@ public class DialogoManager : MonoBehaviour
 
     public void SetConversacion (Conversacion conv, DialogueSpeaker speaker)
     {
-        /*
+        
         if(speaker != null)
         {
             speakerActual = speaker;
@@ -85,11 +85,11 @@ public class DialogoManager : MonoBehaviour
         else
         {
             dialUI.conversacion = conv;
-            dialUI.localIn = speakerActual.diaLocalIn;
+            dialUI.localIn = speakerActual.dialLocalIn;
             dialUI.ActualizarTextos(0);
         }
 
-        */
+        
 
     }
 
@@ -100,8 +100,9 @@ public class DialogoManager : MonoBehaviour
 
     //Funcion a llamar para desbloquear x conversacion
 
+    //Funcion a llamar para desbloquer x converscion.
     public void BloquearYDesbloqueoDeConversacion(Conversacion conv, bool desbloquear)
     {
-
+        conv.desbloqueada = desbloquear;
     }
 }
