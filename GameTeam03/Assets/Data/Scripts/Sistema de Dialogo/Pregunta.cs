@@ -5,16 +5,16 @@ using UnityExtensions;
 
 [System.Serializable]
 
-
 public struct Opciones
 {
     [TextArea(2, 4)]
-    public string opciones;
+    public string opcion;
     public Conversacion convResultantes;
 
 }
 
-[CreateAssetMenu(fileName = "Personaje", menuName = "Sistema de Dialogo/Nuevo Personjae")]
+[CreateAssetMenu(fileName = "Pregunta", menuName = "Sistema de Dialogo/Nueva Pregunta")]
+
 public class Pregunta : ScriptableObject
 {
     [TextArea(3,5)]

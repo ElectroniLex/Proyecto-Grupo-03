@@ -7,7 +7,8 @@ using TMPro;
 
 public class DialogoUI : MonoBehaviour
 {
-    public Conversacion conversacion; // LlAMA AL SCRIPT
+    public Conversacion conversacion; // Conversacion actual mostrada
+
     [SerializeField]
     private float textSpeed = 10;
 
@@ -26,6 +27,7 @@ public class DialogoUI : MonoBehaviour
     [SerializeField]
     private Button continuarButton;
 
+    [SerializeField]
     private Button anteriorButton;
 
     private AudioSource audioSource;

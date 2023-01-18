@@ -43,6 +43,7 @@ public class DialogoManager : MonoBehaviour
     public void MostrarUI( bool mostrar)
     {
         dialUI.gameObject.SetActive(mostrar);
+
         if (!mostrar)
         {
             dialUI.localIn = 0;
@@ -51,6 +52,8 @@ public class DialogoManager : MonoBehaviour
         }
         else
         {
+           
+            
             //player.GetComponent<>().m_WalkSpeed = 0;
         }
 

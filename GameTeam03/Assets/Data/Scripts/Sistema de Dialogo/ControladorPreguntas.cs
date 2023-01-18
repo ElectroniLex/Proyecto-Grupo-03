@@ -25,7 +25,7 @@ public class ControladorPreguntas : MonoBehaviour
             {
                 if (i < cantidad)
                 {
-                    poolButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = opciones[i].opciones;
+                    poolButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = opciones[i].opcion;
                     poolButtons[i].onClick.RemoveAllListeners();
                     Conversacion co = opciones[i].convResultantes;
                     poolButtons[i].onClick.AddListener(() => DarFuncionABotones(co));
