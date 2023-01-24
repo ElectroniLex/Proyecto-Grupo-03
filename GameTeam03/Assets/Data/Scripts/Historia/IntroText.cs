@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class IntroText : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject buttonIniciar;
 
     public string[] SdialogoInicial;
     public string[] SdialogoPelea;
@@ -91,7 +92,7 @@ public class IntroText : MonoBehaviour
         }
 
         txtDialogo.text = "";
-        panel.SetActive(false);
+        buttonIniciar.SetActive(true);
     }
 
     private void Update()

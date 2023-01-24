@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class logicaSimple : MonoBehaviour
 {
+
+    public GameObject PanelCarga;
     public void Salir()
     {
         Application.Quit();
@@ -20,4 +23,9 @@ public class logicaSimple : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Login");
     }
+
+   /* public void Cargar()
+    {
+        PanelCarga.SetActive(true);
+    }*/
 }

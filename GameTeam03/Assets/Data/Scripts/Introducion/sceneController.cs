@@ -10,12 +10,14 @@ public class sceneController : MonoBehaviour
     public string scenaLoadName;
     public TextMeshProUGUI textProgress;
     public Slider sliderProgress;
+    public AudioSource audioClipIntro;
 
     public float currentPercent;
 
     public void LoadSceneButton()
     {
         StartCoroutine(LoadScene(scenaLoadName));
+        audioClipIntro.Stop();
     }
     public IEnumerator LoadScene(string nameToLoad)
     {
