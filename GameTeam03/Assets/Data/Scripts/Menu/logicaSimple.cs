@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class logicaSimple : MonoBehaviour
 {
 
-    public GameObject PanelCarga;
+    //public GameObject PanelCarga;
     public void Salir()
     {
         Application.Quit();
