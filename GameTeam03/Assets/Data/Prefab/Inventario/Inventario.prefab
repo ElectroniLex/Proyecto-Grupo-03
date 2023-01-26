@@ -32,7 +32,7 @@ Transform:
   - {fileID: 7872279413209047250}
   - {fileID: 7872279413457943891}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7872279411960413003
 GameObject:
@@ -3594,6 +3594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 7872279412227156017}
   slotHolder: {fileID: 7872279412863484511}
+  panelGUI: {fileID: 0}
+  PausaMenuInventario: {fileID: 0}
 --- !u!1 &7872279413521920080
 GameObject:
   m_ObjectHideFlags: 0

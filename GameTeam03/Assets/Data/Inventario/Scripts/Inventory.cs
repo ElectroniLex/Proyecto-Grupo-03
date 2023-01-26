@@ -44,8 +44,10 @@ public class Inventory : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-            inventoryEnabled = !inventoryEnabled;
             panelGUI.SetActive(false);
+
+            inventoryEnabled = !inventoryEnabled;
+            
             
         }
 
@@ -102,4 +104,6 @@ public class Inventory : MonoBehaviour
            
         }
     }
+
+  
 }    
