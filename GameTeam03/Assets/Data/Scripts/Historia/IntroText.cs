@@ -86,9 +86,10 @@ public class IntroText : MonoBehaviour
         isDialogActive = false;
         if (auxCorutine != null)
         {
-            Debug.Log("DETENEDOLA");
+            Debug.Log("DETENER");
             StopCoroutine(auxCorutine);
             auxCorutine = null;
+            
         }
 
         txtDialogo.text = "";

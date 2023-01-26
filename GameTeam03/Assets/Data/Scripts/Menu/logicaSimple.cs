@@ -15,8 +15,8 @@ public class logicaSimple : MonoBehaviour
     }
     public void cambiarEcenaMundo()
     {
-        SceneManager.LoadScene("Juego");
-        Debug.Log("Cambio de ecenario  JUEGO");
+        SceneManager.LoadScene("Introducion");
+        Debug.Log("Cambio de ecenario  Introducion");
     }
 
     public void CerrarSesion()

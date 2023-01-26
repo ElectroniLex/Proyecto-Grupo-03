@@ -20,12 +20,12 @@ public class LogicaLogin : MonoBehaviour
             return;
         }
 
-        if      (m_email.text == "Wilfredo@gmail.com" &&  m_password.text == "VRNR") SceneManager.LoadScene("Introducion");
-        else if (m_email.text == "Alex@gmail.com" && m_password.text == "KRFX")  SceneManager.LoadScene("Introducion");
-        else if (m_email.text == "Katherin@gmail.com" && m_password.text == "RVTG") SceneManager.LoadScene("Introducion");
-        else if (m_email.text == "Alejandro@gmail.com" && m_password.text == "VAIN") SceneManager.LoadScene("Introducion");
-        else if (m_email.text == "Yerick@gmail.com" && m_password.text == "MDGE") SceneManager.LoadScene("Introducion");
-        else if (m_email.text == "Henry@gmail.com" && m_password.text == "XUVT") SceneManager.LoadScene("Introducion");
+        if      (m_email.text == "Wilfredo@gmail.com" &&  m_password.text == "VRNR") SceneManager.LoadScene("Menu");
+        else if (m_email.text == "Alex@gmail.com" && m_password.text == "KRFX")  SceneManager.LoadScene("Menu");
+        else if (m_email.text == "Katherin@gmail.com" && m_password.text == "RVTG") SceneManager.LoadScene("Menu");
+        else if (m_email.text == "Alejandro@gmail.com" && m_password.text == "VAIN") SceneManager.LoadScene("Menu");
+        else if (m_email.text == "Yerick@gmail.com" && m_password.text == "MDGE") SceneManager.LoadScene("Menu");
+        else if (m_email.text == "Henry@gmail.com" && m_password.text == "XUVT") SceneManager.LoadScene("Menu");
         else m_textError.text = "Verifique su correo y contraseña";
         
         return;
