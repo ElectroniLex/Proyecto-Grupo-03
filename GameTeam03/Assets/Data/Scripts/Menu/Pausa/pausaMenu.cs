@@ -7,6 +7,7 @@ public class pausaMenu : MonoBehaviour
 {
     public static bool Pausa = false;
     public GameObject PausaMenuCanvas;
+    public GameObject IcoGuardar;
 
 
     void Start()
@@ -45,11 +46,13 @@ public class pausaMenu : MonoBehaviour
 
     }
 
-    public void MainMenuButton()
+    public void MenuPrincipal()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         SceneManager.LoadSceneAsync("Menu");
     }
+
+  
 
      
 

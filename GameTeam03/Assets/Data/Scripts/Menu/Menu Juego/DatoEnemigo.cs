@@ -11,7 +11,7 @@ public class DatoEnemigo : MonoBehaviour
     {
         if (other.tag == "player")
         {
-            player.GetComponent<datosJugador>().vidaPlayer -= damage;
+            player.GetComponent<PlayerYazmin>().vidaPlayer -= damage;
         }
 
         if (other.tag == ("Enemigo"))
