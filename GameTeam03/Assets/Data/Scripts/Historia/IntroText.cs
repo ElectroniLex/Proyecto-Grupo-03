@@ -10,6 +10,7 @@ public class IntroText : MonoBehaviour
 {
     public GameObject panel;
     public GameObject buttonIniciar;
+    public GameObject buttonSaltar;
 
     public string[] SdialogoInicial;
     public string[] SdialogoPelea;
@@ -94,6 +95,7 @@ public class IntroText : MonoBehaviour
 
         txtDialogo.text = "";
         buttonIniciar.SetActive(true);
+        buttonSaltar.SetActive(false);
     }
 
     private void Update()

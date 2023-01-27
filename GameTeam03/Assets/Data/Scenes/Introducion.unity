@@ -290,8 +290,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1895740099}
-  - {fileID: 1805387084}
   - {fileID: 1285759864}
+  - {fileID: 1805387084}
   m_Father: {fileID: 1907532760}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -467,6 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 319693945}
   buttonIniciar: {fileID: 1285759863}
+  buttonSaltar: {fileID: 1805387083}
   SdialogoInicial:
   - "Hace un tiempo viv\xEDa un joven pr\xEDncipe llamado Ralph, el era un oficial
     general Supremo. Y tambi\xE9n tiene un hermano llamado Axel \xE9l es el coronel."
