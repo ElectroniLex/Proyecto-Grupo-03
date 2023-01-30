@@ -15,7 +15,7 @@ public class VidaEnemigoLagarto : MonoBehaviour
 
         if (vidaEnemigo <= 0)
         {
-            Debug.Log("Fin del Juego");
+            Debug.Log("EnemigoDerrotado");
         }
     }
 

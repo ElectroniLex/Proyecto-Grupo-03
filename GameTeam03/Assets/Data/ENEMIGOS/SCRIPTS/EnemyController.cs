@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject PanelVidaEnemigoLagarto;
     public int rutina;
     public float cronometro;
     public Animator anim;
@@ -12,6 +14,8 @@ public class EnemyController : MonoBehaviour
 
     public GameObject target;
     public bool atacando;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,17 +39,20 @@ public class EnemyController : MonoBehaviour
             {
                 case 0 :
                     anim.SetBool("walk", false);
+                    PanelVidaEnemigoLagarto.SetActive(false);
                     break;
 
                 case 1:
                     grado = Random.Range(0, 360);
                     angulo = Quaternion.Euler(0, grado, 0);
                     rutina++;
+                    PanelVidaEnemigoLagarto.SetActive(false);
                     break;
                 case 2:
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     anim.SetBool("walk", true);
+                    PanelVidaEnemigoLagarto.SetActive(false);
                     break;
             }
         }
@@ -63,6 +70,8 @@ public class EnemyController : MonoBehaviour
                 transform.Translate(Vector3.forward * 2 * Time.deltaTime);
 
                 anim.SetBool("attack", false);
+
+                PanelVidaEnemigoLagarto.SetActive(true);
             }
             else
             {
@@ -70,6 +79,7 @@ public class EnemyController : MonoBehaviour
                 anim.SetBool("run", false);
 
                 anim.SetBool("attack", true);
+                
             }
         }
     }
@@ -78,6 +88,7 @@ public class EnemyController : MonoBehaviour
     {
         anim.SetBool("attack", false);
         atacando = false;
+       
     }
 
     // Update is called once per frame
