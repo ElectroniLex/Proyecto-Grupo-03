@@ -11,9 +11,9 @@ public class PlayerYazmin : MonoBehaviour
     public int vidaPlayer;
     public Slider sliderVida;
 
-    public int MonedaErisActual;
-    public TextMeshProUGUI UIMoneda;
-  
+    
+
+
     private void Update()
     {
 

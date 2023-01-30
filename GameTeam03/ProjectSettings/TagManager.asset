@@ -6,6 +6,11 @@ TagManager:
   tags:
   - player
   - enemigo
+  - Item
+  - WeaponManager
+  - arma
+  - Ground
+  - Enemigo
   layers:
   - Default
   - TransparentFX

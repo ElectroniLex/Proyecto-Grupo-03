@@ -229,6 +229,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 785267643850636061, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3473918378051314250}
+    - targetCorrespondingSourceObject: {fileID: 785267643850636061, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3368558876157753802}
+    - targetCorrespondingSourceObject: {fileID: 785267643850636061, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1671679858458220297}
   m_SourcePrefab: {fileID: 100100000, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
 --- !u!1 &5781840745569910671 stripped
 GameObject:
@@ -299,6 +305,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CentralDeDialogo: {fileID: 0}
   VelocidadMovimiento: 6
+--- !u!114 &3368558876157753802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5781840745569910671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94688d2814d8974e987dc7382cbe29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Da\xF1oPlayer": 200
+  EnemigoLagarto: {fileID: 0}
+--- !u!135 &1671679858458220297
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5781840745569910671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.1988667
+  m_Center: {x: 0, y: 0.6988667, z: 0}
 --- !u!4 &5781840745569910768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 785267643850636130, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}

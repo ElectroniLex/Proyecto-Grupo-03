@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DatoEnemigo : MonoBehaviour
 {
-    public int VidaEnemigo;
+    public int DañoEnemigo;
     public GameObject player;
     //public Slider UIVida;
 
@@ -12,7 +12,7 @@ public class DatoEnemigo : MonoBehaviour
     {
         if (other.tag == "player")
         {
-            player.GetComponent<PlayerYazmin>().vidaPlayer -= VidaEnemigo;
+            player.GetComponent<PlayerYazmin>().vidaPlayer -= DañoEnemigo;
         }
 
         if (other.tag == ("Enemigo"))
