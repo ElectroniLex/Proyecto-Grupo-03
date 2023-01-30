@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Programaci\xF3n y Animacion a los personajes Proncipales"
+  m_text: "Programaci\xF3n y Animacion a los personajes Principales."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e42e5f41ccd4ef40b85561ad4830b55, type: 2}
   m_sharedMaterial: {fileID: 5147923225476344505, guid: 0e42e5f41ccd4ef40b85561ad4830b55, type: 2}
@@ -1684,7 +1684,7 @@ RectTransform:
   m_GameObject: {fileID: 608073210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.27018, y: 0.27018, z: 0.27018}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1477853835}
@@ -1693,8 +1693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 145, y: 57}
-  m_SizeDelta: {x: 309.2411, y: 92.86499}
+  m_AnchoredPosition: {x: 87, y: 58}
+  m_SizeDelta: {x: 248.62, y: 137.1668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608073212
 MonoBehaviour:
@@ -1784,7 +1784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6e554685155db0245abe2f27f3b5029e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a4a82917e11ef43ad128064c012549, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5335,7 +5335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1287845719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6089,9 +6089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Regresar
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6118,7 +6116,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6585,7 +6583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Programaci\xF3n de enemigos y GDD"
+  m_text: "Programaci\xF3n de enemigos, GDD Y Pagina Web"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e42e5f41ccd4ef40b85561ad4830b55, type: 2}
   m_sharedMaterial: {fileID: 5147923225476344505, guid: 0e42e5f41ccd4ef40b85561ad4830b55, type: 2}
