@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class PlayerYazmin : MonoBehaviour
 {
@@ -11,7 +12,11 @@ public class PlayerYazmin : MonoBehaviour
     public int vidaPlayer;
     public Slider sliderVida;
 
-    
+    [SerializeField] GameObject player;
+    [SerializeField] Transform spawnPointer;
+    [SerializeField] float spanwnValue;
+
+
 
 
     private void Update()
@@ -23,6 +28,10 @@ public class PlayerYazmin : MonoBehaviour
         if (vidaPlayer <= 0)
         {
             Debug.Log("Fin del Juego");
+            if (player.transform.position.y <-spanwnValue)
+            {
+                RespawnPointer();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -33,6 +42,11 @@ public class PlayerYazmin : MonoBehaviour
         {
             LoadData();
         }
+    }
+
+    void RespawnPointer()
+    {
+        transform.position = spawnPointer.position;
     }
 
     public void LoadData()
