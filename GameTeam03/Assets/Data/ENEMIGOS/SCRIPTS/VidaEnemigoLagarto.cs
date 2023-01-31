@@ -8,6 +8,7 @@ public class VidaEnemigoLagarto : MonoBehaviour
 
     public int vidaEnemigo;
     public Slider sliderVidaEnemigo;
+    public GameObject DerrotarLagarto;
     void Update()
     {
         sliderVidaEnemigo.GetComponent<Slider>().value = vidaEnemigo;
@@ -15,7 +16,7 @@ public class VidaEnemigoLagarto : MonoBehaviour
 
         if (vidaEnemigo <= 0)
         {
-            Debug.Log("EnemigoDerrotado");
+            DerrotarLagarto.SetActive(false);
         }
     }
 

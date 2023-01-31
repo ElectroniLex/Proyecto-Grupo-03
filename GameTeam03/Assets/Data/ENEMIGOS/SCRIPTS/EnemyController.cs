@@ -12,8 +12,11 @@ public class EnemyController : MonoBehaviour
     public Quaternion angulo;
     public float grado;
 
+    //public VidaEnemigoLagarto vidaEnemigo;
+
     public GameObject target;
     public bool atacando;
+
 
     
     // Start is called before the first frame update
