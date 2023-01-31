@@ -1,34 +1,140 @@
+:root {
+    --background-btn: linear-gradient(90deg, #F200F7 0%, #0B0524 100%);
+}
+
 body {
-    font-family: Montserrat, sans-serif;
+    margin: 0px;
+    font-family: 'Monserrat', sans-serif;
+    background: #19003A;
 }
-
-header {
-    background-color: #BBBBBB;
-    padding: 20px 0;
-}
-
-.box {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-}
-
 nav {
+    padding: 30px;
+    display: flex;
+    height: 15em;
+    background: #19003A;
+}
+
+.encabezado {
+    display: flex;
+}
+
+.encabezado img {
     position: absolute;
-    top: 110px;
-    right: 0;
+    width: 270px;
+    height: 143px;
+    left: 89px;
+    top: 50px;
+    border-radius: 15px;
 }
 
-nav li {
+.encabezado ul {
+    position: absolute;
+    top: 94px;
+    left: 457px;
+}
+
+.encabezado ul li {
+    margin: 12px;
     display: inline;
-    margin: 0 0 0 15px;
 }
 
-nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
+.encabezado a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
+.btn-contacto {
+    background: #19003A;
+    box-sizing: border-box;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 154px;
+    height: 48px;
+    left: 1009px;
+    top: 94px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.btn-unete {
+    position: absolute;
+    width: 154px;
+    height: 48px;
+    left: 1201px;
+    top: 94px;
+
+    background: var(--background-btn);
+    border-radius: 40px;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.frase {
+    position: absolute;
+    width: 450px;
+    height: 220px;
+    left: 84px;
+    top: 303px;
+}
+
+.frase p {
+    font-family: 'Monserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.frase button {
+    position: absolute;
+    width: 214px;
+    height: 48px;
+    top: 300px;
+    font-family: 'Monserrat', sans-serif;
+    color: #FFFFFF;
+    background: var(--background-btn);
+    border-radius: 40px;
+    border: none;
+}
+
+.titulo h2:first-child {
+    font-family: 'Monserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+
+    background: linear-gradient(91.57deg, #E8B7E6 -1.02%, #FA00FF 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0;
+}
+
+.titulo h2:last-child {
+    font-family: 'Monserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.img-computadora {
+    position: absolute;
+    left: 848px;
+    top: 256px;
+}
+
+.img-computadora img {
+   width: 490px; 
+   height: 426px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 100px 100px 100px 240px;
+}
