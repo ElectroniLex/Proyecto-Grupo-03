@@ -9,7 +9,8 @@ public class Time_Changer : MonoBehaviour
     private float _timeScale = 2.5f;
     private static readonly int Rotation = Shader.PropertyToID("_Rotation");
     private static readonly int Exposure = Shader.PropertyToID("_Exposure");
-
+    public float _additionalTime = 10f;
+  
 
     // Update is called once per frame
     void Update()
