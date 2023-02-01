@@ -13,7 +13,7 @@ public class DañoPlayerYazmin : MonoBehaviour
     {
         if (other.tag == "Enemigo")
         {
-            EnemigoLagarto.GetComponent<VidaEnemigoLagarto>().vidaEnemigo -= DañoPlayer;
+            EnemigoLagarto.GetComponent<VidaEnemigoLagartoGris>().vidaEnemigoLagarto -= DañoPlayer;
             
         }
 
