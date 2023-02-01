@@ -8,8 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class IntroText : MonoBehaviour
 {
+    public AudioSource audioClipIntro;
     public GameObject panel;
     public GameObject buttonIniciar;
+    public GameObject buttonSaltar;
     public GameObject textoPlay;
 
     public string[] SdialogoInicial;
@@ -27,12 +29,14 @@ public class IntroText : MonoBehaviour
         {
             CerrarDialogo();
             StartCoroutine(esperaSolapacionDialogo(valor));
+            //buttonSaltar.SetActive(true);
             
         }
         else
         {
             isDialogActive = false;
             auxCorutine = StartCoroutine(mostrarDialogo(valor));
+            //buttonSaltar.SetActive(false);
             
         }
 
@@ -42,6 +46,7 @@ public class IntroText : MonoBehaviour
     IEnumerator mostrarDialogo(int valor, float time = 0.1f)
     {
         panel.SetActive(true);
+        audioClipIntro.Play();
         string[] dialogo; // Donde guardarekos el dialogo real
         if (valor == 0) dialogo = SdialogoInicial;
         else if (valor == 1) dialogo = SdialogoPelea;
@@ -95,7 +100,9 @@ public class IntroText : MonoBehaviour
 
         txtDialogo.text = "";
         buttonIniciar.SetActive(true);
+        buttonSaltar.SetActive(false);
         textoPlay.SetActive(false);
+        audioClipIntro.Stop();
     }
 
     private void Update()
@@ -103,6 +110,9 @@ public class IntroText : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             AbrirCajaDialogo(0);
+            buttonSaltar.SetActive(true);
+
+           
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
