@@ -234,6 +234,9 @@ PrefabInstance:
       addedObject: {fileID: 3368558876157753802}
     - targetCorrespondingSourceObject: {fileID: 785267643850636061, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 8302842265780802619}
+    - targetCorrespondingSourceObject: {fileID: 785267643850636061, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1671679858458220297}
   m_SourcePrefab: {fileID: 100100000, guid: 10a99c550d68610468d14ba69c5e5309, type: 3}
 --- !u!1 &5781840745569910671 stripped
@@ -319,6 +322,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "Da\xF1oPlayer": 200
   EnemigoLagarto: {fileID: 0}
+--- !u!114 &8302842265780802619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5781840745569910671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41753b6a8c20d7b4db3435f363cef58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spawnPointer: {fileID: 0}
+  spanwnValue: 0
 --- !u!135 &1671679858458220297
 SphereCollider:
   m_ObjectHideFlags: 0

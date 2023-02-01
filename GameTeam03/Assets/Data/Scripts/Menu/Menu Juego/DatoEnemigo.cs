@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DatoEnemigo : MonoBehaviour
 {
-    public int DañoEnemigo;
+    public int DañoPlayerAlEnemigo;
     public GameObject player;
     //public Slider UIVida;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "player")
+        if (other.CompareTag("player"))
         {
-            player.GetComponent<PlayerYazmin>().vidaPlayer -= DañoEnemigo;
+            Debug.Log("Enemigo Recibe daño");
+
+
+            player.GetComponent<PlayerYazmin>().vidaPlayer -= DañoPlayerAlEnemigo;
         }
 
-        if (other.tag == ("Enemigo"))
-        {
-            Debug.Log("Esto es un enemigo");
-        }
+       
     }
 }

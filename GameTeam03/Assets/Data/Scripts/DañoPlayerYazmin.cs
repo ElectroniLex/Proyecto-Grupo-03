@@ -6,13 +6,15 @@ public class DañoPlayerYazmin : MonoBehaviour
 {
     public int DañoPlayer;
     public GameObject EnemigoLagarto;
-
+    public GameObject EnemigoMagoAzul;
+    public GameObject EnemigoMagoVerde;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemigo")
         {
             EnemigoLagarto.GetComponent<VidaEnemigoLagarto>().vidaEnemigo -= DañoPlayer;
+            
         }
 
         if (other.tag == ("Enemigo"))

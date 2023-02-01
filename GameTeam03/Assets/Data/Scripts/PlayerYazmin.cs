@@ -12,12 +12,7 @@ public class PlayerYazmin : MonoBehaviour
     public int vidaPlayer;
     public Slider sliderVida;
 
-    [SerializeField] GameObject player;
-    [SerializeField] Transform spawnPointer;
-    [SerializeField] float spanwnValue;
-
-
-
+    
 
     private void Update()
     {
@@ -28,10 +23,7 @@ public class PlayerYazmin : MonoBehaviour
         if (vidaPlayer <= 0)
         {
             Debug.Log("Fin del Juego");
-            if (player.transform.position.y <-spanwnValue)
-            {
-                RespawnPointer();
-            }
+            
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -44,10 +36,7 @@ public class PlayerYazmin : MonoBehaviour
         }
     }
 
-    void RespawnPointer()
-    {
-        transform.position = spawnPointer.position;
-    }
+   
 
     public void LoadData()
     {
@@ -66,10 +55,7 @@ public class PlayerYazmin : MonoBehaviour
         Debug.Log("Datos Guardados");
     }
 
-    public void MonedaEris()
-    {
-        
-    }
+   
 
   
 }

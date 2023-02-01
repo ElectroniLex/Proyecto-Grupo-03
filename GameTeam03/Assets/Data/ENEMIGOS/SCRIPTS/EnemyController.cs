@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class EnemyController : MonoBehaviour
 {
     public GameObject PanelVidaEnemigoLagarto;
+    public GameObject PanelVidaEnemigoMagoAzul;
+
     public int rutina;
     public float cronometro;
     public Animator anim;
@@ -42,20 +44,20 @@ public class EnemyController : MonoBehaviour
             {
                 case 0 :
                     anim.SetBool("walk", false);
-                    PanelVidaEnemigoLagarto.SetActive(false);
+                    PanelVidaEnemigoMagoAzul.SetActive(false);
                     break;
 
                 case 1:
                     grado = Random.Range(0, 360);
                     angulo = Quaternion.Euler(0, grado, 0);
                     rutina++;
-                    PanelVidaEnemigoLagarto.SetActive(false);
+                    PanelVidaEnemigoMagoAzul.SetActive(false);
                     break;
                 case 2:
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     anim.SetBool("walk", true);
-                    PanelVidaEnemigoLagarto.SetActive(false);
+                    PanelVidaEnemigoMagoAzul.SetActive(false);
                     break;
             }
         }
@@ -75,6 +77,7 @@ public class EnemyController : MonoBehaviour
                 anim.SetBool("attack", false);
 
                 PanelVidaEnemigoLagarto.SetActive(true);
+                PanelVidaEnemigoMagoAzul.SetActive(true);
             }
             else
             {
