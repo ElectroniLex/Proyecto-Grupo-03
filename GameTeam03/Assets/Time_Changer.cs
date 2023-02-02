@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Time_Changer : MonoBehaviour
+public class TimeChanger : MonoBehaviour
 {
     [SerializeField] private Material skybox;
     private float _elapsedTime = 0f;
     private float _timeScale = 2.5f;
     private static readonly int Rotation = Shader.PropertyToID("_Rotation");
     private static readonly int Exposure = Shader.PropertyToID("_Exposure");
-    public float _additionalTime = 10f;
-  
+
 
     // Update is called once per frame
     void Update()
