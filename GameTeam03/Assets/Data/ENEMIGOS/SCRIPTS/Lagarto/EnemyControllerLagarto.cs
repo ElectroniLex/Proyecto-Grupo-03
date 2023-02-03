@@ -15,6 +15,7 @@ public class EnemyControllerLagarto : MonoBehaviour
 
     public GameObject target;
     public bool atacando;
+    public AudioSource AudioCaminar;
 
 
     
@@ -41,7 +42,7 @@ public class EnemyControllerLagarto : MonoBehaviour
             {
                 case 0 :
                     anim.SetBool("walk", false);
-
+                    AudioCaminar.Play();
                     PanelVidaEnemigoLagarto.SetActive(false);
                     break;
 
@@ -83,6 +84,7 @@ public class EnemyControllerLagarto : MonoBehaviour
             else
             {
                 anim.SetBool("walk", false);
+                AudioCaminar.Stop();
                 anim.SetBool("run", false);
                 anim.SetBool("attack", true);
 
