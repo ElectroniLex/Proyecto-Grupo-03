@@ -15,8 +15,10 @@ public class EnemyControllerLagarto : MonoBehaviour
 
     public GameObject target;
     public bool atacando;
-    public AudioSource AudioCaminar;
 
+    public AudioSource audioCaminar;
+    
+    
 
     
     // Start is called before the first frame update
@@ -42,8 +44,8 @@ public class EnemyControllerLagarto : MonoBehaviour
             {
                 case 0 :
                     anim.SetBool("walk", false);
-                    AudioCaminar.Play();
                     PanelVidaEnemigoLagarto.SetActive(false);
+                    audioCaminar.Stop();
                     break;
 
                 case 1:
@@ -51,6 +53,7 @@ public class EnemyControllerLagarto : MonoBehaviour
                     angulo = Quaternion.Euler(0, grado, 0);
                     rutina++;
                     PanelVidaEnemigoLagarto.SetActive(false);
+                    audioCaminar.Stop();
 
                     break;
                 case 2:
@@ -58,6 +61,8 @@ public class EnemyControllerLagarto : MonoBehaviour
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     anim.SetBool("walk", true);
                     PanelVidaEnemigoLagarto.SetActive(false);
+
+                    audioCaminar.Play();
 
                     break;
             }
@@ -70,12 +75,13 @@ public class EnemyControllerLagarto : MonoBehaviour
                 lookPos.y = 0;
                 var rotation = Quaternion.LookRotation(lookPos);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
-                anim.SetBool("walk", false);
+                anim.SetBool("walk", false); // camina 
 
-                anim.SetBool("run", true);
+                anim.SetBool("run", true);// correr
                 transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+                audioCaminar.Play();
 
-                anim.SetBool("attack", false);
+                anim.SetBool("attack", false);// atacar
 
                 PanelVidaEnemigoLagarto.SetActive(true);
 
@@ -83,12 +89,12 @@ public class EnemyControllerLagarto : MonoBehaviour
             }
             else
             {
-                anim.SetBool("walk", false);
-                AudioCaminar.Stop();
-                anim.SetBool("run", false);
-                anim.SetBool("attack", true);
+                anim.SetBool("walk", false); // Desactiva la animacion de caminar
+                anim.SetBool("run", false);// Desactiva la animacion de correr 
+                anim.SetBool("attack", true); //Activa la animacion de atacar
 
-                
+                audioCaminar.Stop();
+
 
             }
         }
